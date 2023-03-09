@@ -20,7 +20,7 @@
     .heading-first {
       position: absolute;
       left: -15%;
-      bottom: 300px;
+      bottom: 760%;
       text-align: left;
 
     }
@@ -29,32 +29,33 @@
 
       position: absolute;
       left: -15%;
-      bottom: 230px;
+      bottom: 550%;
 
     }
 
-    .modal-button {
+    .course-button {
       width: 150px;
       height: 50px;
       background-color: rgb(139, 7, 196);
       color: white;
       position: absolute;
-      left: 70px;
-      bottom: 150px;
+      left: 5%;
+      bottom: 20%;
       z-index: 1;
       border-radius: 30px;
       font-weight: bold;
       border: 0;
     }
 
-    .enq-button:hover {
-      background-color: rgb(220, 207, 207);
-      
+    .course-button:hover{
+      background-color: rgb(241, 229, 229);
+      color: rgb(139, 7, 196);
     }
+
     .heading-second {
       position: absolute;
       left: -15%;
-      bottom: 300px;
+      bottom: 760%;
       text-align: left;
 
     }
@@ -63,7 +64,7 @@
 
       position: absolute;
       left: -15%;
-      bottom: 230px;
+      bottom: 550%;
 
     }
 
@@ -71,11 +72,13 @@
       border: 0;
     }
 
-    .save-button{
+    .knowmore-button{
       position: absolute;
-      bottom: -100px;
-      left: 50px;
+      bottom: -16%;
+      left: 5%;
+      /* z-index: 1; */
     }
+
   </style>
 </head>
 
@@ -153,6 +156,10 @@
           <h5 class="para-1">We at LUMINAR TECHNOLAB offers best software training and placement in emerging <br>
             technologies like BIG DATA, Data Science, Machine Learning,PYTHON, Software Testing.</h5>
         </div>
+        <button class="course-button">
+          VIEW COURSES
+
+        </button>
 
       </div>
       <div class="carousel-item">
@@ -164,6 +171,10 @@
           <h5 class="para-2">We at LUMINAR TECHNOLAB offers best software training and placement in emerging <br>
             technologies like BIG DATA, Data Science, Machine Learning,PYTHON, Software Testing.</h5>
         </div>
+        <button class="course-button">
+          VIEW COURSES
+
+        </button>
       </div>
 
     </div>
@@ -177,16 +188,17 @@
     </button>
   </div>
           <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary save-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary knowmore-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
   KNOW MORE
 </button>
+<br><br><br><br>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Get Training Quote for free</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -220,7 +232,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" >Save changes</button>
+        <button type="button" class="btn btn-primary" >Submit</button>
       </div>
     </div>
   </div>
