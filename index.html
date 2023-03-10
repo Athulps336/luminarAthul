@@ -36,7 +36,7 @@
     .course-button {
       width: 150px;
       height: 50px;
-      background-color: rgb(139, 7, 196);
+      background-color: blueviolet;
       color: white;
       position: absolute;
       left: 5%;
@@ -47,9 +47,9 @@
       border: 0;
     }
 
-    .course-button:hover{
+    .course-button:hover {
       background-color: rgb(241, 229, 229);
-      color: rgb(139, 7, 196);
+      color: blueviolet;
     }
 
     .heading-second {
@@ -68,22 +68,39 @@
 
     }
 
-    .input-style1{
+    .input-style1 {
       border: 0;
     }
 
-    .knowmore-button{
-      position: absolute;
-      bottom: -16%;
+    .knowmore-button {
+      position: relative;
       left: 5%;
       /* z-index: 1; */
     }
-
+    .heading-third{
+      color: rgb(48, 8, 84);
+    }
+    .gst-no{
+      color: rgb(133, 120, 146);
+    }
+    .learnmore-button{
+      width: 150px;
+      height: 50px;
+      background-color: blueviolet;
+      color: white;
+      /* position: absolute; */
+      left: 5%;
+      /* bottom: 20%; */
+      z-index: 1;
+      border-radius: 30px;
+      font-weight: bold;
+      border: 0;
+    }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg" style="background-color: rgb(139, 7, 196);">
+  <nav class="navbar navbar-expand-lg" style="background-color: blueviolet;">
     <div class="container">
       <ul class="navbar-nav me-auto mb-0 mb-lg-0">
         <li class="nav-item">
@@ -166,7 +183,7 @@
         <img src="./images/slide2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h1 class="heading-second">Big Data - Hadoop & Spark <br>
-          Data Science, ML & AI Python Data Science
+            Data Science, ML & AI Python Data Science
           </h1>
           <h5 class="para-2">We at LUMINAR TECHNOLAB offers best software training and placement in emerging <br>
             technologies like BIG DATA, Data Science, Machine Learning,PYTHON, Software Testing.</h5>
@@ -186,57 +203,84 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary knowmore-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  KNOW MORE
-</button>
-<br><br><br><br>
+  </div> <br><br>
+  <!-- Button trigger modal -->
+<div>
+    <button type="button" class="btn btn-primary knowmore-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      KNOW MORE
+    </button>
+</div>
+  <br><br><br><br>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Get Training Quote for free</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div>
-          <input type="text" placeholder="Name" class="input-style1">
-        </div> <hr>
-        <div>
-          <input type="email" placeholder="Email" class="input-style1">
-        </div> <hr>
-        <div>
-          <input type="text" placeholder="mobile Number" class="input-style1">
-        </div> <hr>
-        <div>
-          <label for="course">Select Courses intrested in</label>
-          <select name="" id="course" class="input-style1">
-            <option value=""></option>
-            <option value="">MEA(R)N</option>
-            <option value="">Python</option>
-            <option value="">Data Science</option>
-            <option value="">Flutter</option>
-
-          </select>
-        </div> <hr>
-        <div>
-          <input type="text" placeholder="City" class="input-style1">
-        </div> <hr>
-        <div>
-          <label for="adress">Address</label> <br>
-          <textarea name="" id="adress" cols="20" rows="5" class="input-style1"></textarea >
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Get Training Quote for free</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <div>
+            <input type="text" placeholder="Name" class="input-style1">
+          </div>
+          <hr>
+          <div>
+            <input type="email" placeholder="Email" class="input-style1">
+          </div>
+          <hr>
+          <div>
+            <input type="text" placeholder="mobile Number" class="input-style1">
+          </div>
+          <hr>
+          <div>
+            <label for="course">Select Courses intrested in</label>
+            <select name="" id="course" class="input-style1">
+              <option value=""></option>
+              <option value="">MEA(R)N</option>
+              <option value="">Python</option>
+              <option value="">Data Science</option>
+              <option value="">Flutter</option>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" >Submit</button>
+            </select>
+          </div>
+          <hr>
+          <div>
+            <input type="text" placeholder="City" class="input-style1">
+          </div>
+          <hr>
+          <div>
+            <label for="adress">Address</label> <br>
+            <textarea name="" id="adress" cols="20" rows="5" class="input-style1"></textarea>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
       </div>
     </div>
   </div>
+  <div class="container" style="width: 60%;">
+<div class="row">
+  <div class="col-lg-8 col-md-6">
+<h1 class="heading-third">Luminar Technolab Pvt Ltd</h1>
+<p class="gst-no">CIN: U80220KL2021PTC071578</p> <br>
+<p class="para-explain">
+  Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing advanced level software training to Students and by helping them to get placed in IT companies. We are a team of IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s career foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python Training, Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to match with the current industry requirements. Our Vision is to provide 100% placements to students those who enroll with us for our specialized courses
+</p>
+<button class="learnmore-button">
+  LEARN MORE
+
+</button>
+  </div>
+  <div class="col-lg-4 col-md-6">
+<img src="./images/luminar111.jpg" alt="">
+  </div>
 </div>
+
+  </div>
+
 </body>
 
 </html>
